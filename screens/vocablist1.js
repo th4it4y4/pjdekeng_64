@@ -33,6 +33,7 @@ class vocablist extends Component {
                 eng,
                 thai
             })
+            // console.log(vocabArr);
         })
         this.setState({
             vocabArr,
@@ -50,7 +51,7 @@ class vocablist extends Component {
                                 key={i}
                                 bottomDivider
                                 onPress={()=>{
-                                    this.props.navigation.navigate("Update_del1",{key:item.key})
+                                    this.props.navigation.navigate("Update_del1", {key:item.key})
                                   }}
                             >   
                                 <Badge 

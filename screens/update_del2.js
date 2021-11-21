@@ -19,7 +19,7 @@ class update_del1 extends Component {
     console.log(this.props.navigation.getParam("key"));
     const VocabDoc = firebase
       .firestore()
-      .collection("vocab1")
+      .collection("vocab2")
       .doc(this.props.navigation.getParam("key"))
     VocabDoc.get().then((res) => {
       if (res.exists) {
@@ -45,7 +45,7 @@ class update_del1 extends Component {
   updateVocab() {
     const updateVocabDoc = firebase
       .firestore()
-      .collection("vocab1")
+      .collection("vocab2")
       .doc(this.state.key);
     updateVocabDoc
       .set({
@@ -65,7 +65,7 @@ class update_del1 extends Component {
   deleteVocab() {
     const delVocabDoc = firebase
       .firestore()
-      .collection("vocab1")
+      .collection("vocab2")
       .doc(this.props.navigation.getParam("key"));
     delVocabDoc.delete().then((res) => {
       Alert.alert(

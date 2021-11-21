@@ -49,11 +49,9 @@ class vocablist extends Component {
                             <ListItem
                                 key={i}
                                 bottomDivider
-                                // onPress={() => {
-                                //     this.props.navigation.navigate('userDetailScreen', {
-                                //         vocabKey: item.key
-                                //     })
-                                // }}
+                                onPress={()=>{
+                                    this.props.navigation.navigate("Update_del3", {key:item.key})
+                                  }}
                             >   
                                 <Badge 
                                     value={i+1}

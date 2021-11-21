@@ -17,6 +17,10 @@ import stdvocab3 from './screens/stdvocab3';
 
 import stdvocabdetail from './screens/stdvocabdetail';
 import update_del1 from './screens/update_del1';
+import update_del2 from './screens/update_del2';
+import update_del3 from './screens/update_del3';
+
+// import MyNavigator from './navigation/MyNavigation';
 
 //import MyNavigator from './navigation/MyNavigator';
 
@@ -43,8 +47,27 @@ const stackNavigator = createStackNavigator({
   Stdvocabs3: stdvocab3,
   Stddetail: stdvocabdetail,
   Update_del1: update_del1,
+  Update_del2: update_del2,
+  Update_del3: update_del3,
 });
 
 const App = createAppContainer(stackNavigator);
 
 export default App;
+
+// export default function App() {
+//   // เพิ่มโค้ดส่วนนี้ เพื่อจัดการ Stack Navigation
+//   return (
+//     <MyNavigator/>
+//   )
+
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: "blue",
+//     alignItems: "center",
+//     justifyContent: "center",
+//   },
+// });

@@ -50,7 +50,7 @@ class stdvocab1 extends Component {
               key={i}
               bottomDivider
               onPress={()=>{
-                this.props.navigation.navigate("Stddetail",{key:item.key})
+                this.props.navigation.navigate("Stddetail",{key:item.key, eng:item.eng, pic: item.pic, thai: item.thai})
               }}
             >
               <ListItem.Content>
